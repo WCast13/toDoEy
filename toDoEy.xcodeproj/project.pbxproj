@@ -13,6 +13,7 @@
 		3D536E6F1FF6C9CC007ADDCC /* toDoEy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3D536E6D1FF6C9CC007ADDCC /* toDoEy.xcdatamodeld */; };
 		3D536E711FF6C9CC007ADDCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D536E701FF6C9CC007ADDCC /* Assets.xcassets */; };
 		3D536E741FF6C9CC007ADDCC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D536E721FF6C9CC007ADDCC /* LaunchScreen.storyboard */; };
+		3D9E55121FF7D3B10079D83D /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9E55111FF7D3B10079D83D /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		3D536E701FF6C9CC007ADDCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D536E731FF6C9CC007ADDCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D536E751FF6C9CC007ADDCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D9E55111FF7D3B10079D83D /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +59,47 @@
 			isa = PBXGroup;
 			children = (
 				3D536E661FF6C9CC007ADDCC /* AppDelegate.swift */,
-				3D536E681FF6C9CC007ADDCC /* TodoListViewController.swift */,
-				3D536E6A1FF6C9CC007ADDCC /* Main.storyboard */,
-				3D536E701FF6C9CC007ADDCC /* Assets.xcassets */,
-				3D536E721FF6C9CC007ADDCC /* LaunchScreen.storyboard */,
-				3D536E751FF6C9CC007ADDCC /* Info.plist */,
-				3D536E6D1FF6C9CC007ADDCC /* toDoEy.xcdatamodeld */,
+				3D9E55141FF7D4210079D83D /* Controllers */,
+				3D9E55131FF7D4030079D83D /* Model */,
+				3D9E55151FF7D4390079D83D /* Views */,
+				3D9E55161FF7D4550079D83D /* Supporting Files */,
 			);
 			path = toDoEy;
+			sourceTree = "<group>";
+		};
+		3D9E55131FF7D4030079D83D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3D9E55111FF7D3B10079D83D /* Item.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3D9E55141FF7D4210079D83D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3D536E681FF6C9CC007ADDCC /* TodoListViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3D9E55151FF7D4390079D83D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3D536E6A1FF6C9CC007ADDCC /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3D9E55161FF7D4550079D83D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3D536E701FF6C9CC007ADDCC /* Assets.xcassets */,
+				3D536E721FF6C9CC007ADDCC /* LaunchScreen.storyboard */,
+				3D536E6D1FF6C9CC007ADDCC /* toDoEy.xcdatamodeld */,
+				3D536E751FF6C9CC007ADDCC /* Info.plist */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +174,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D9E55121FF7D3B10079D83D /* Item.swift in Sources */,
 				3D536E691FF6C9CC007ADDCC /* TodoListViewController.swift in Sources */,
 				3D536E6F1FF6C9CC007ADDCC /* toDoEy.xcdatamodeld in Sources */,
 				3D536E671FF6C9CC007ADDCC /* AppDelegate.swift in Sources */,
@@ -280,7 +316,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4QM78MLWEF;
-				INFOPLIST_FILE = toDoEy/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/toDoEy/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wctech.toDoEy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -295,7 +331,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4QM78MLWEF;
-				INFOPLIST_FILE = toDoEy/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/toDoEy/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wctech.toDoEy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
